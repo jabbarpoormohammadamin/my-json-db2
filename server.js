@@ -5,13 +5,9 @@ const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
 server.use(jsonServer.bodyParser)
-
-// اینجا محدودیت 30 آیتم رو حذف می‌کنیم
-server.use((req, res, next) => {
-  next()
-})
-
 server.use(router)
-server.listen(3000, () => {
+
+server.listen(process.env.PORT || 3000, () => {
   console.log('JSON Server is running')
 })
+
