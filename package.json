@@ -1,3 +1,13 @@
-"scripts": {
-  "start": "node server.js"
+{
+  "name": "json-server-vercel",
+  "version": "1.0.0",
+  "description": "JSON Server for Vercel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
 }
+
